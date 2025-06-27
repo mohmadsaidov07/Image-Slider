@@ -54,6 +54,7 @@ function prevCar() {
       nextBtn.style.backgroundColor,
       prevBtn.style.backgroundColor,
     ] = ["purple", "purple", "blue", "red"];
+    updateTitle();
   } else if (currCar === "purple") {
     slideBlock.style.transform = `translateX(-500px)`;
     [
