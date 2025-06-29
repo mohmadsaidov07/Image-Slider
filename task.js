@@ -76,13 +76,10 @@ function prevCar() {
   }
 }
 
-nextBtn.addEventListener("click", nextCar);
-prevBtn.addEventListener("click", prevCar);
-
 document.addEventListener("keydown", (event) => {
-  if (event.keyCode === 39) {
+  if (event.keyCode === 39 || event.keyCode === 68) {
     nextCar();
-  } else if (event.keyCode === 37) {
+  } else if (event.keyCode === 37 || event.keyCode === 65) {
     prevCar();
   }
 });
